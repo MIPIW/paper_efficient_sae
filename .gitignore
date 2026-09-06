@@ -1,0 +1,28 @@
+# Large raw datasets — not source code, don't belong in git (1.5GB)
+/data/
+
+# External dependency, cloned separately (has its own .git) — see README
+/dictionary_learning/
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# env / secrets — never commit these
+.env
+*.env
+**/secrets*
+
+# Checkpoints / large binaries, just in case
+*.pt
+*.ckpt
+*.safetensors
+
+# wandb local run cache
+wandb/
+
+# OS
+.DS_Store
